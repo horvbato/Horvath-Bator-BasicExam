@@ -129,21 +129,21 @@ function successAjax(xhttp) {
       szovegManufacturer.innerText = 'Manufacturer: ' + asdf[i].manufacturer;
     }
   }
-  //fillScreen(consNullTorlolve);
+  fillScreen(consNullTorlolve);
 
-  function kereses() {
-    var array;
-    var value = document.getElementById('search-text').value;
-    for (let i = 0; i < sort.length; i++) {
-      if (sort[i].model.toString().toLowerCase().indexOf(value.toLowerCase()) > -1) {
-        array = sort[i];
-        break;
-      } else {
-        array = 'No result!';
-      }
-    }
-    console.log(kereses('fds'));
+  // function kereses() {
+  //   var array;
+  //   var value = document.getElementById('search-text').value;
+  //   for (let i = 0; i < sort.length; i++) {
+  //     if (sort[i].model.toString().toLowerCase().indexOf(value.toLowerCase()) > -1) {
+  //       array = sort[i];
+  //       break;
+  //     } else {
+  //       array = 'nincs találat';
+  //     }
+  //   }
+  //   console.log(kereses('fds'));
 
-  }
+}
 
-  getData('/json/spaceships.json', successAjax);
+getData('/json/spaceships.json', successAjax);
